@@ -1,0 +1,386 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* navbar */
+
+#navbar {
+    background-color: black;
+}
+
+#navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+}
+#navbar ul li{
+    margin:20px 10px;
+
+}
+#navbar ul li a{
+    display: block;
+    padding:8px 13px;
+    margin:5px 10px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 15px;
+    transition: 1s;
+
+    
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color:black;
+}
+
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:85px;
+    z-index: -1;
+    opacity: 0.3;
+
+}
+
+/* section-1 */
+
+.section-1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+   height: 80vh;
+   position: relative;
+}
+
+.book_store_img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -999;
+}
+
+.section-1::before{
+    content:"";
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/book2.webp);
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    top:0px;
+    left:0px;
+    z-index: -2;
+}
+
+.section-1 h1{
+    padding:10px;
+    margin:10px;
+    font-size: 3rem;
+    color:rgb(255, 255, 255);
+    text-align: center;
+}
+.section-1 p{
+    margin:5px;
+    font-size: 1.5rem;
+    color:rgb(255, 255, 255);
+    text-align: center;
+}
+.section-1 a{
+    padding:10px 15px;
+    margin:10px;
+    border:2px solid white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    transition: all 1s;
+}
+.section-1 a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* section-2 */
+.section-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(211, 211, 211);
+    padding-bottom: 40px;
+}
+
+.section-2 p{
+    padding:5px;
+    text-align: center;
+       
+   }
+   .section-2 .box-container{
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       width:100%;
+       margin-top: 40px;
+       flex-wrap: wrap;
+       
+   }
+   
+   .section-2 .box-container .box{
+       display: flex;
+       width:200px;
+       height:350px;
+       border-radius: 20px;
+       margin:20px;
+       flex-direction: column;
+       justify-content: space-around;
+       align-items: center;
+   }
+   
+   .section-2 .box-container .box .img{
+       width:200px;
+       height:300px;
+       border-radius: 20px;
+   }
+   
+   .section-2 .box-container .box .caption{
+      display: flex;
+      justify-content: center;
+      height:50px;
+      align-items: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+   }
+   
+   .section-2 .box-container .box .img1{
+       background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images.jpeg) no-repeat center center/cover;
+   
+   
+   }
+   .section-2 .box-container .box .img2{
+       background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(Adventure-Fiction-Book-Genres-Explained-1.webp) no-repeat center center/cover;
+   
+   
+   
+   }
+   .section-2 .box-container .box .img3{
+       background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images\ \(2\).jpeg) no-repeat center center/cover;
+   
+     
+   }
+   .section-2 .box-container .box .img4{
+       background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(bestbooks2023art.jpg) no-repeat center center/cover;
+   
+   
+   }
+   
+   .section-2 .box-container .img:hover{
+       opacity: 0.5;
+   
+   }
+/* utility class */
+
+ .h-primary{
+    font-size: 2rem;
+    color:rgb(0, 0, 0);
+    letter-spacing: 3px;
+    margin-top:50px;
+    padding:5px;
+    text-transform: uppercase;
+    
+}
+
+/* section-3 */
+.section-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 70px;
+    background-color: rgb(255, 255, 255);
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(pngtree-scene-with-geometrical-forms-the-poster-model-minimal-background-render-image_437743.jpg) no-repeat center center/cover;
+
+    
+}
+.section-3 .h-primary{
+    color:white;
+    position: relative;
+    left:20px;
+}
+.section-3 form{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:white;
+    letter-spacing: 2px;
+
+}
+.section-3 .form-container{
+    position: relative;
+    left:-31px;
+    width:100%;
+}
+.section-3 form div{
+padding:8px;
+margin:4px;
+   
+    
+}
+.section-3 form input{
+ padding:8px 100px;
+ background-color: transparent;
+ outline: rgb(255, 255, 255);
+ border-radius: 12px;
+ border:1px solid rgb(255, 255, 255);
+ color:white;
+
+}
+.section-3 form label{
+    text-transform: uppercase;
+}
+
+.section-3 a{
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+    border:1px solid rgb(255, 255, 255);
+    padding:8px 5px;
+    display: block;
+    text-align: center;
+    margin:7px 0px;
+
+    width:120px;
+    margin-top: 40px;
+    position: relative;
+    left:15px;
+    transition: 1s;
+
+ 
+}
+.section-3 a:hover{
+    background-color: white;
+    color: black;
+   
+
+}
+
+/* section-4 */
+.section-4{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+    background-color: rgb(194, 194, 194);
+}
+
+.section-4 .cards-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:40px 0px;
+    width:100%;
+    flex-wrap: wrap;
+    
+}
+.section-4 .cards-container .card{
+    width:300px;
+    box-shadow: 5px 5px 10px rgb(110, 110, 110),
+                 -5px -5px 10px rgb(255, 255, 255) ;
+    display: flex;
+    justify-content: center;
+    padding:20px;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    margin:30px;
+    
+
+    
+}
+.section-4 .cards-container .card img{
+    transition: transform .5s linear ;
+        
+    }
+.section-4 .cards-container .card:hover img{
+transform: rotate(360deg);
+    
+}
+.section-4 .cards-container .card img{
+ width:100px;
+ height:100px;
+ border-radius: 50%;
+
+    
+} 
+.section-4 .cards-container .card2 img{
+filter: invert(0.8);
+   
+       
+   } 
+.section-4 .cards-container .card .h-secondary{
+margin:20px;
+text-transform: uppercase;
+letter-spacing: 2px;
+font-weight: 700;
+text-align: center;
+
+   
+           }
+ .section-4 .cards-container .card .description{
+     text-align: center;
+     
+     }
+
+     .section-4 .cards-container .card a{
+        margin:20px;
+        padding:8px 15px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color:black;
+        border-radius: 10px;
+        border:1px solid rgb(63, 63, 63);
+        text-decoration: none;
+        transition: 1s;
+
+        
+        }
+        .section-4 .cards-container .card a:hover{
+background-color: rgb(255, 0, 0);
+color:white;
+
+            
+            }
+
+
+/* footer */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:50px;
+    background-color: black;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 16px ;
+    font-weight: 100;
+
+}
+
+
+
